@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Delete from "./delete";
+import CreateStr from "./createStr";
 
 class App extends Component {
     constructor() {
@@ -10,17 +10,16 @@ class App extends Component {
             current: ''           
         }
         this.incr = this.incr.bind(this)
-        this.onInput = this.onInput.bind(this)
+       // this.onInput = this.onInput.bind(this)
         this.onClick = this.onClick.bind(this)
-        this.remove = this.remove.bind(this)
-        
+    //    this.remove = this.remove.bind(this)
     }
 
     incr() {
         this.setState({ count: this.state.count + 1 });
     }
 
-    onInput(e) {
+    onInput = e => {
         this.setState({ current: e.target.value })
     }
 
@@ -31,18 +30,12 @@ class App extends Component {
         this.setState({ str: copy, current: ""});
     }
 
-    remove(i) {
-        let copy = this.state.str.slice();
-        copy.splice(i, 1)
-        this.setState({ str: copy })
-    }
+
 
     render() {
         let list = this.state.str.map(function(e, i) {
             return (
-                <Delete str={e} remove={function() {
-                    this.remove(i)
-                }}/>
+                <CreateStr str={e} ind={i}/>
             )
         })
         return (

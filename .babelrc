@@ -1,11 +1,15 @@
 {
   "presets": [
+    "react",
     ["env", {
       "targets": {
         "node": "current",
         "browsers": ["last 2 versions", "safari >= 7"]
       }
-    }],
-    "react"
+    }]
+  ],
+  "plugins": [
+    "transform-exponentiation-operator",
+    "transform-es2015-arrow-functions"
   ]
 }
