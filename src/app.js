@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./containers/Header"
+
+import TodoList from "./containers/TodoList";
 
 /*
 class App extends React.Component {
@@ -13,6 +14,6 @@ class App extends React.Component {
 const Mount_Node = document.getElementById("app");
 
 ReactDOM.render(
-  <Header />,
+  <TodoList />,
   Mount_Node
 );

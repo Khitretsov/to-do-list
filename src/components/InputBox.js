@@ -1,9 +1,7 @@
 import React from "react";
 
 export default function InputBox(props) {
-    const onChange = props.onChange;
-    const value = props.value;
     return(
-        <input value={value} onChange={onChange} />
+        <input value={props.value} onChange={props.onChange} /> 
     );
 }
