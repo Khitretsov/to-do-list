@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./module";
+import Header from "./containers/Header"
 
 /*
 class App extends React.Component {
@@ -13,6 +13,6 @@ class App extends React.Component {
 const Mount_Node = document.getElementById("app");
 
 ReactDOM.render(
-  <App />,
+  <Header />,
   Mount_Node
 );
