@@ -32,11 +32,11 @@ export default class TodoList extends React.Component {
             <div>
             
             <Header value={this.state.term} onChange={this.onChange} onClick={this.onSubmit}/>
-            <button onClick={this.onSubmit}>X</button>
-            <Button onClick={this.onSubmit}/>
+            
+            <Button onClick={this.onSubmit}>Это кнопка</Button>
         {// <input value={this.state.term} onChange={this.onChange} />
          // onChange={() => this.onChange}
-         // 
+         // <button onClick={this.onSubmit}>X</button>
          //
          //
         }   <List items={this.state.items} />
