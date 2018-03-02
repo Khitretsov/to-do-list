@@ -16,10 +16,13 @@ export default class Header extends React.Component {
         const value = "dgfbbdggb";
 
         return(
-            <InputBox value={value} onChange={this.setState({newText: value})}/>
+            <InputBox value={value} onChange={() => this.onChange}/>
         );
     }
 
+    onChange = () => {
+        
+    }
     
 }
 
