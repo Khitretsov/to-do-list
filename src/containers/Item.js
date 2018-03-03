@@ -6,14 +6,16 @@ export default class Item extends React.Component {
         super(props);
       } 
 
-
+    onClikc = e => {
+        console.log(this.props.item)
+    }
 
     render() {
         return (
             <div>
             <li key={this.props.index}>{this.props.item}</li> 
    {//         
-   }        <Button onClick={() => {alert('sdfvsd')}} />
+   }        <Button onClick={this.props.onClick} />
             </div>
         );
     };

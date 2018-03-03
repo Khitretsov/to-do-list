@@ -40,7 +40,7 @@ export default class TodoList extends React.Component {
          // <Button onClick={this.onSubmit}>Это кнопка</Button>
          //
         }   <List items={this.state.items} />
-             
+            {this.state.items} 
          
             </div>
         );
