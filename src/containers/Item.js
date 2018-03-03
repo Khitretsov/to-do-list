@@ -6,7 +6,7 @@ export default class Item extends React.Component {
         super(props);
       } 
 
-    onClikc = e => {
+    edit = () => {
         console.log(this.props.item)
     }
 
@@ -15,7 +15,9 @@ export default class Item extends React.Component {
             <div>
             <li key={this.props.index}>{this.props.item}</li> 
    {//         
-   }        <Button onClick={this.props.onClick} />
+   }        <Button onClick={this.props.onClick} >Удалить</Button>
+            <Button onClick={this.edit}>Редактировать</Button>
+
             </div>
         );
     };

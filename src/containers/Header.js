@@ -11,7 +11,7 @@ export default class TodoList extends React.Component {
         return(
             <div>
             <InputBox value={this.props.value} onChange={this.props.onChange}/>
-            <Button onClick={this.props.onClick}>Это кнопка</Button>
+            <Button onClick={this.props.onClick}>Добавить запись</Button>
             </div>
         )
 
